@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPN Сервис</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><b><a href="#">Главная</a></b></li>
+                <li><b><a href="#">Тарифные планы</a></b></li>
+                <li><b><a href="#">Регистрация</a></b></li>
+                <li><b><a href="#">Фотка</a></b></li>
+            </ul>
+        </nav>
+        <hr>
+        <h1>💯VPN 💯</h1>
+        <h2>Об VPN:</h2>
+        <p id="greeting"></p>
+        <p>Всем привет, это самый мощный vpn, который стоит очень много денег.</p>
+        <p>Все деньги, которые вы будете платить за подписку vpn, они <b>пойдут на путевку в дубай</b>.</p>
+        <p>Если у вас сломается vpn, то не стоит грустить, пока он <b>"чинится"</b> можно посмотреть вк-клипы.</p>
+    </header>
+    
+    <hr>
+
+    <main>
+        <!-- Практическое задание: один список -->
+        <section class="content-section">
+            <h3>Список преимуществ</h3>
+            <p>Здесь будут отображаться преимущества нашего VPN</p>
+            
+            <input type="text" id="new-item-input" placeholder="Введите новый элемент">
+            <button id="add-item-btn">Добавить элемент</button>
+            <button id="change-text-btn">Изменить текст</button>
+            
+            <ul id="item-list">
+                <li>Мгновенная доставка ключей</li>
+                <li>Скидки до 99%</li>
+                <li>Поддержка 24/7</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- Самостоятельное задание: два списка -->
+        <section class="lists-section">
+            <h3>Работа со списками</h3>
+            <p>Выделите элементы и переместите их между списками</p>
+            
+            <div class="lists-container">
+                <!-- Первый список -->
+                <div class="list-section">
+                    <h4>Список 1</h4>
+                    <ul id="list-1">
+                        <li>Элемент 1</li>
+                        <li>Элемент 2</li>
+                        <li>Элемент 3</li>
+                        <li>Элемент 4</li>
+                        <li>Элемент 5</li>
+                    </ul>
+                </div>
+                
+                <!-- Кнопки перемещения -->
+                <div class="move-buttons">
+                    <button id="move-right-btn" title="Переместить в Список 2">→</button>
+                    <button id="move-left-btn" title="Переместить в Список 1">←</button>
+                </div>
+                
+                <!-- Второй список -->
+                <div class="list-section">
+                    <h4>Список 2</h4>
+                    <ul id="list-2">
+                        <li>Элемент A</li>
+                        <li>Элемент B</li>
+                        <li>Элемент C</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div id="move-message"></div>
+        </section>
+
+        <hr>
+
+        <!-- Регистрация -->
+        <section class="content-section">
+            <h3>Регистрация</h3>
+            <p id="day-info"></p>
+            
+            <h2>Наши преимущества</h2>
+            <ul id="advantages"></ul>
+            
+            <form id="register-form" class="register-form" novalidate>
+                <label for="username" class="form-label">Имя пользователя:</label>
+                <input type="text" id="username" name="username" class="form-input">
+
+                <label for="email" class="form-label">Электронная почта:</label>
+                <input type="email" id="email" name="email" class="form-input">
+
+                <label for="password" class="form-label">Пароль:</label>
+                <input type="password" id="password" name="password" class="form-input">
+
+                <label for="age" class="form-label">Возраст:</label>
+                <input type="number" id="age" name="age" class="form-input">
+
+                <label for="checkbox" class="form-label checkbox-label">
+                    <input type="checkbox" id="checkbox" name="checkbox"> Согласие с правилами
+                </label>
+                <p>⚠️ Осторожно только с 18+, так как использование этого vpn младше 18 лет строго запрещено! ⚠️</p>
+                <input type="submit" value="Отправить" class="submit-btn">
+            </form>
+            <div id="form-message"></div>
+        </section>
+
+        <hr>
+
+        <!-- Тарифные планы -->
+        <section class="info-card">
+            <h3>Тарифные планы</h3>
+            <table class="vpn-table">
+                <thead>
+                    <tr>
+                        <th>Подписка</th>
+                        <th>Период</th>
+                        <th>Цена</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Базовый</td>
+                        <td>30 дней</td>
+                        <td>99 руб.</td>
+                    </tr>
+                    <tr>
+                        <td>Стандарт</td>
+                        <td>180 дней</td>
+                        <td>799 руб.</td>
+                    </tr>
+                    <tr>
+                        <td>Премиум +</td>
+                        <td>1 год</td>
+                        <td>1990 руб.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <div class="image-container">
+                <img src="ya.jpg" alt="Изображение иконки VPN" width="200">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p id="footer-text"></p>
+    </footer>
+
+</body>
+</html>
